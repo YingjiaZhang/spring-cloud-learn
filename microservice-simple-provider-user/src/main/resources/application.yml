@@ -1,0 +1,18 @@
+server:
+  port: 8000
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+logging:
+  leve:
+    root: INFO
+    org.hiberate: INFO
+    org.hiberate.type.descriptor.sql.BasicBinder: TRACE
+    org.hiberate.type.descriptor.sql.BasicExtracto: TRACE
