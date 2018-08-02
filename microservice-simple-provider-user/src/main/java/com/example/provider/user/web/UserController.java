@@ -1,7 +1,7 @@
-package com.example.microservicesimpleprovideruser.web;
+package com.example.provider.user.web;
 
-import com.example.microservicesimpleprovideruser.dao.UserRepository;
-import com.example.microservicesimpleprovideruser.entity.User;
+import com.example.provider.user.dao.UserRepository;
+import com.example.provider.user.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

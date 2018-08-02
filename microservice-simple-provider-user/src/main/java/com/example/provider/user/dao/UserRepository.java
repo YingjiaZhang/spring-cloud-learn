@@ -1,6 +1,6 @@
-package com.example.microservicesimpleprovideruser.dao;
+package com.example.provider.user.dao;
 
-import com.example.microservicesimpleprovideruser.entity.User;
+import com.example.provider.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

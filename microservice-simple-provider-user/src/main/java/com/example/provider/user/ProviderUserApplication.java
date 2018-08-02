@@ -1,4 +1,4 @@
-package com.example.microservicesimpleprovideruser;
+package com.example.provider.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

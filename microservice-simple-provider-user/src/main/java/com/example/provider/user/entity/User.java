@@ -1,4 +1,4 @@
-package com.example.microservicesimpleprovideruser.entity;
+package com.example.provider.user.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
