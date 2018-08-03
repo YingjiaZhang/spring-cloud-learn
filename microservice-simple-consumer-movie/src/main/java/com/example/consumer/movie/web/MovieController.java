@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class MovieController {
-    @Value("user.userServiceUrl")
+    @Value("${user.userServiceUrl}")
     private String userServiceUrl;
 
     @Autowired
