@@ -1,0 +1,20 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: microservice-consumer-movie
+
+user:
+  userServiceUrl: http://localhost:8000/
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://locahost:8761/eureka/
+  instance:
+    prefer-ip-address: true
