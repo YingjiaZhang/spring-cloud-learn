@@ -1,8 +1,8 @@
 spring:
   application:
-    name: microservice-discovery-eureka
+    name: microservice-discovery-eureka-ha
   profiles:
-    active: peer1
+    active: peer2
 
 ---
 spring:
