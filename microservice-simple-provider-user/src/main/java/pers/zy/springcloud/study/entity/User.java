@@ -1,4 +1,4 @@
-package com.example.provider.user.entity;
+package pers.zy.springcloud.study.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.example.provider.user;
+package pers.zy.springcloud.study;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

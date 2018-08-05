@@ -1,7 +1,7 @@
-package com.example.provider.user.web;
+package pers.zy.springcloud.study.web;
 
-import com.example.provider.user.dao.UserRepository;
-import com.example.provider.user.entity.User;
+import pers.zy.springcloud.study.dao.UserRepository;
+import pers.zy.springcloud.study.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

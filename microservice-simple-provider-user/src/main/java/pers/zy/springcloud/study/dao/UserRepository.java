@@ -1,6 +1,6 @@
-package com.example.provider.user.dao;
+package pers.zy.springcloud.study.dao;
 
-import com.example.provider.user.entity.User;
+import pers.zy.springcloud.study.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
