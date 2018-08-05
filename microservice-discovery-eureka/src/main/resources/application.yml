@@ -16,7 +16,7 @@ eureka:
     hostname: peer1
   client:
     service-url:
-      default-zone: http://peer2:8762/eureka/
+      default-zone: http://peer1:8761/eureka/
 ---
 spring:
   profiles: peer2
@@ -30,6 +30,7 @@ eureka:
   client:
     service-url:
       default-zone: http://peer1:8761/eureka/
+
 
 
 

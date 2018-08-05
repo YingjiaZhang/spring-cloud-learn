@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: microservice-discovery-eureka-authenticating
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password123
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://user:password123@locahost:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+
+
+
