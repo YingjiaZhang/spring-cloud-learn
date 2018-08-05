@@ -6,10 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ProviderUserApplication {
+public class ProviderUserMyMetadataApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProviderUserApplication.class, args);
+		SpringApplication.run(ProviderUserMyMetadataApplication.class, args);
 	}
 }
 
