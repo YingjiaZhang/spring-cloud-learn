@@ -1,0 +1,38 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: microservice-provider-user-my-metadata
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+logging:
+  leve:
+    root: INFO
+    org.hiberate: INFO
+    org.hiberate.type.descriptor.sql.BasicBinder: TRACE
+    org.hiberate.type.descriptor.sql.BasicExtracto: TRACE
+
+## INFO
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      target: @java.version@
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: zzz
