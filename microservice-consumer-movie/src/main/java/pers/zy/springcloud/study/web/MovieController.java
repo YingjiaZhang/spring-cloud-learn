@@ -1,6 +1,6 @@
-package com.example.consumer.movie.web;
+package pers.zy.springcloud.study.web;
 
-import com.example.consumer.movie.dto.User;
+import pers.zy.springcloud.study.dto.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

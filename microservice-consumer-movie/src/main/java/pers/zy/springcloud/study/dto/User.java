@@ -1,4 +1,4 @@
-package com.example.consumer.movie.dto;
+package pers.zy.springcloud.study.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
