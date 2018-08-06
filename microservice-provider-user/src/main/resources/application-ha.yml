@@ -1,8 +1,7 @@
 server:
   port: 8000
+
 spring:
-  application:
-    name: microservice-provider-user
   jpa:
     generate-ddl: false
     show-sql: true
@@ -12,6 +11,7 @@ spring:
     platform: h2
     schema: classpath:schema.sql
     data: classpath:data.sql
+
 logging:
   leve:
     root: INFO
