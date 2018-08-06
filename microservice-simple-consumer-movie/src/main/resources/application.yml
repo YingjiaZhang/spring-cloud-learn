@@ -3,7 +3,3 @@ server:
 
 user:
   userServiceUrl: http://localhost:8000/
-
-management:
-  security:
-    enabled: false

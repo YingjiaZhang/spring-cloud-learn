@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>microservice-simple-consumer-movie</name>
+	<name>microservice-consumer-movie-understanding-metadata</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

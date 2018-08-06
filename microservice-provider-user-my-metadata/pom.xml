@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>microservice-provider-user</name>
+	<name>microservice-provider-user-my-metadata</name>
 	<description>Demo project for Spring Boot</description>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
