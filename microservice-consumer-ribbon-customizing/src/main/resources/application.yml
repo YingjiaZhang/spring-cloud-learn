@@ -1,0 +1,20 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: microservice-consumer-ribbon-customizing
+
+user:
+  userServiceUrl: http://localhost:8000/
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+  instance:
+    prefer-ip-address: true

@@ -17,6 +17,8 @@ eureka:
   client:
     service-url:
       default-zone: http://peer1:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false
 ---
 spring:
   profiles: peer2
