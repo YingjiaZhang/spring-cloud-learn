@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b381ce3-3680-4d9e-aaeb-795265b55202" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/src/main/java/pers/zy/springcloud/study/ConsumerMovieFeginApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/src/main/java/pers/zy/springcloud/study/client/UserClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/src/main/java/pers/zy/springcloud/study/dto/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/src/main/java/pers/zy/springcloud/study/web/MovieController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/src/main/resources/application.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/microservice-consumer-movie-fegin/src/test/java/pers/zy/springcloud/study/ConsumerMovieFeginApplicationTests.java" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/spring-cloud-learn.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-    </list>
+    <list default="true" id="6b381ce3-3680-4d9e-aaeb-795265b55202" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -388,12 +372,12 @@
       <updated>1533277655183</updated>
       <workItem from="1533277656471" duration="8000" />
       <workItem from="1533529318594" duration="1589000" />
-      <workItem from="1533539060788" duration="600000" />
+      <workItem from="1533539060788" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2197000" />
+    <option name="totallyTimeSpent" value="2795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
