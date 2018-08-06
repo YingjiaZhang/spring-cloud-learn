@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ConsumerMovieRibbonCustomizingApplication {
+public class ConsumerMovieRibbonCustomizingPropertiesApplication {
 
     @Bean
     @LoadBalanced
@@ -18,6 +18,6 @@ public class ConsumerMovieRibbonCustomizingApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerMovieRibbonCustomizingApplication.class, args);
+        SpringApplication.run(ConsumerMovieRibbonCustomizingPropertiesApplication.class, args);
     }
 }

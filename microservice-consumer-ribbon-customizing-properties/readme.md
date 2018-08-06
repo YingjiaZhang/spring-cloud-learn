@@ -1,1 +1,1 @@
-# microservice-consumer-ribbon
+# microservice-consumer-movie-ribbon-customizing-properties
