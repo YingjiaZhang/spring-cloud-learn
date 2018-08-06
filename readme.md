@@ -11,23 +11,27 @@
 
 - [yml加载优先级](https://cloud.tencent.com/developer/article/1085852)
 # 遇到的坑
-- **java.lang.IllegalArgumentException: URI is not absolute** 
 
-    **原因**： @Value没有取到application.yml中userServiceUrl的值
-    
-    **解决**：`@Value("user.userServiceUrl) `改为 `@Value("${user.userServiceUrl}") `
+- java.lang.IllegalArgumentException: URI is not absolute 
 
-- **java.lang.IllegalArgumentException: URI is not absolute** 
+    原因：@Value没有取到application.yml中userServiceUrl的值
+    
+    解决：@Value("user.userServiceUrl) 改为 @Value("${user.userServiceUrl}") 
 
-    **原因**： @Value没有取到application.yml中userServiceUrl的值
-    
-    **解决**：`@Value("user.userServiceUrl) `改为 `@Value("${user.userServiceUrl}") `
-    
 - 若添加spring-cloud-starter依赖,在启动项目的时候不会初始化datasource schema 
 
-- spring-cloud-version 不对导致项目启动报错 NoSuchMethodException : 更新版本为 Edgware.RELEASE
+- spring-cloud-version 不对导致项目启动报错 NoSuchMethodException 
+    
+   解决：更新版本为 Edgware.RELEASE
 
 - 不能够导入jpa需要refresh maven源 
+
+- java.lang.IllegalArgumentException: No converter found for return value of type 
+
+    原因：指定类没有getter setter方法
+    
+    解决：添加getter setter 方法 / Annotation Process ： enable lombok plugin 
+
 
 
 
