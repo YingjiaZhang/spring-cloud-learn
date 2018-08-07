@@ -15,8 +15,8 @@ eureka:
 feign:
   compression:
     request:
-      mime-types: text/xml, application/xml,application/json
-      min-request-size: 2048
+      mime-types: text/xml, application/xml,application/json  # default : text/xml, application/xml,application/json
+      min-request-size: 2048 # default : 2048
       enabled: true
     response:
       enabled: true
