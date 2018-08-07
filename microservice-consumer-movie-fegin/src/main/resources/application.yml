@@ -11,3 +11,14 @@ eureka:
       default-zone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
   instance:
     prefer-ip-address: true
+
+feign:
+  compression:
+    request:
+      mime-types: text/xml, application/xml,application/json
+      min-request-size: 2048
+      enabled: true
+    response:
+      enabled: true
+
+
