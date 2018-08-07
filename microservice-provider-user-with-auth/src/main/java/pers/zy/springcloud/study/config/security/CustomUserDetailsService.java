@@ -11,9 +11,9 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         if ("user".equals(username)) {
-            return new SecurityUser();
+            return new SecurityUser("user","password1","user-role");
         } else if ("admin".equals(username)) {
-            return new SecurityUser();
+            return new SecurityUser("admin","password2","admin-role");
         } else {
             return null;
         }
