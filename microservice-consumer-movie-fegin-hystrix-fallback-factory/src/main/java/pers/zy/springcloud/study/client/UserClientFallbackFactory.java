@@ -14,7 +14,10 @@ public class UserClientFallbackFactory implements FallbackFactory<UserClient> {
             @Override
             public User findById(Long id) {
                 log.info("fallback; reason was : ", cause);
-                return User.builder().id(-1L).username("defalut username").build();
+                if (cause instanceof IllegalArgumentException) {
+                    return User.builder().id(-1L).username("IllegalArgumentException default username").build();
+                }
+                return User.builder().id(-1L).username("other exception default username").build();
             }
         };
     }
