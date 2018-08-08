@@ -10,6 +10,10 @@
 - [package 命名规范](https://blog.csdn.net/kongjiea/article/details/45365753)
 
 - [yml加载优先级](https://cloud.tencent.com/developer/article/1085852)
+
+- [Hystrix](https://blog.csdn.net/heyutao007/article/details/51006694)
+
+- [Hystrix Configuration](https://github.com/Netflix/Hystrix/wiki/Configuration)
 # 遇到的坑
 
 - java.lang.IllegalArgumentException: URI is not absolute 
