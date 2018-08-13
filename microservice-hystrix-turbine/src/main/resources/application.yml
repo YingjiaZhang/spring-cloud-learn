@@ -10,5 +10,5 @@ eureka:
   instance:
     prefer-ip-address: true
 turbine:
-  app-config: microservice-consumer-movie-ribbon-hystrix,microservice-consumer-movie-fegin-fallback
+  app-config: microservice-consumer-movie-ribbon-hystrix,microservice-consumer-movie-fegin-hystrix-fallback-stream
   cluster-name-expression: "'default'"
