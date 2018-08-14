@@ -18,6 +18,8 @@
 - [服务熔断、降级、限流、异步RPC -- HyStrix](https://blog.csdn.net/chunlongyu/article/details/53259014)
 
 - [分布式系统延迟和容错框架Hystrix](https://blog.csdn.net/fight4gold/article/details/51252217)
+
+- [Zuul routes端点](https://www.jianshu.com/p/6956d58804f7?utm_source=oschina-app)
 # 遇到的坑
 
 - java.lang.IllegalArgumentException: URI is not absolute 

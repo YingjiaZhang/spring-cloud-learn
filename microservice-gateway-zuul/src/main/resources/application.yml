@@ -10,6 +10,10 @@ eureka:
 server:
   port: 8040
 
+management:
+  security:
+    enabled: false # 不设置 routes 端点无法访问
+
 
 
 
