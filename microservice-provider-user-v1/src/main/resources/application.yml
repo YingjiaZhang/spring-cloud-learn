@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: microservice-provider-user-v1
+  profiles:
+    active: ha

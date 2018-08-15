@@ -1,0 +1,70 @@
+spring:
+  application:
+    name: microservice-gateway-zuul-route
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+server:
+  port: 8040
+
+management:
+  security:
+    enabled: false # 不设置 routes 端点无法访问
+
+## zuul.routes. 指定微服务的serviceId = 指定路径
+#zuul:
+#  routes:
+#    microservice-consumer-movie-fegin-hystrix-fallback-stream: /movie/**
+
+# 让zuul忽略指定微服务，只代理其他微服务
+#zuul:
+#  routes:
+#    microservice-consumer-movie-fegin-hystrix-fallback-stream: /movie-ignore-user/**
+#  ignored-services: microservice-provider-user
+##  ignored-services: '*' # 忽略所有微服务
+
+# 指定微服务serviceId 和对应路径
+#zuul:
+#  routes:
+#    user-route: # 路由名称，可以自定义
+#      service-id: microservice-provider-user
+#      path: /user-user/**
+
+## 同时指定 path 和 URL，但是破坏了 Zuul 的 Hystrix 和 Ribbon 特性
+## 使用本例，配置的最终路由不会作为hystrixCommand执行，同时也不能够使用Ribbon来负载均衡多个URL
+#zuul:
+#  routes:
+#    user-route: # 路由名称，可以自定义
+#      url: http://localhost:8000/
+#      path: /user-url-1/**
+#
+# 同时指定 path 和 URL，不破坏了 Zuul 的 Hystrix 和 Ribbon 特性
+#zuul:
+#  routes:
+#    user-route: # 路由名称，可以自定义
+#      path: /user-url-2/**
+#      service-id: microservice-provider-user
+#ribbon:
+#  eureka:
+#    enable: true
+#
+#microservice-provider-user:
+#  ribbon:
+#    lisOfServers: localhost:8000, localhost:8001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
