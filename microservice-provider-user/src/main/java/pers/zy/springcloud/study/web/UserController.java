@@ -17,4 +17,9 @@ public class UserController {
     public User findById(@PathVariable Long id) {
         return userRepository.findOne(id);
     }
+
+    @GetMapping("/admin/{id}")
+    public User findAdminById(@PathVariable Long id) {
+        return userRepository.findOne(id);
+    }
 }

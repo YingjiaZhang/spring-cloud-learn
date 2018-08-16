@@ -52,7 +52,24 @@ management:
 #
 #microservice-provider-user:
 #  ribbon:
-#    lisOfServers: localhost:8000, localhost:8001
+#    lisOfServers: localhost:8000, localhost:800
+#zuul:
+#  prefix: /api
+#  strip-prefix: false  #  /api/service-id/1  -> /api/1
+#  routes:
+#    c: /user/**  # /api/user/1  -> /api/1
+
+zuul:
+  ignored-patterns: /**/admin/** # 忽略微服务中所有包含 /admin/的路径
+  routes:
+    microservice-provider-user: /user-provider/**
+
+logging:
+  level:
+    com.netflix: debug # 将 com.netflix 包的日志级别设置成 debug， 使zuul 打印转发细节。
+
+
+
 
 
 
