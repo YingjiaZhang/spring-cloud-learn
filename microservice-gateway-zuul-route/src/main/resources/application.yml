@@ -58,15 +58,35 @@ management:
 #  strip-prefix: false  #  /api/service-id/1  -> /api/1
 #  routes:
 #    c: /user/**  # /api/user/1  -> /api/1
+#
+#zuul:
+#  ignored-patterns: /**/admin/** # 忽略微服务中所有包含 /admin/的路径
+#  routes:
+#    microservice-provider-user: /user-provider/**
+
+
+# Header
+
+#zuul:
+#  ignored-patterns: /**/admin/** # 忽略微服务中所有包含 /admin/的路径
+#  routes:
+#    microservice-provider-user:
+#    #    You can share headers between services in the same system, but you probably do not want sensitive headers leaking downstream into external servers
+#      sensitive-headers: Cookie,Set-Cookie,Authorization
+#      path: /user-sensitive/**
+#      url: http://localhost:8000
+#
+#zuul:
+#  sensitive-headers: Cookie,Set-Cookie,Authorization # 指定全局header,默认 Cookie,Set-Cookie,Authorization； zuul.routes.*.sensitive-headers 会覆盖全局header
 
 zuul:
-  ignored-patterns: /**/admin/** # 忽略微服务中所有包含 /admin/的路径
-  routes:
-    microservice-provider-user: /user-provider/**
+  ignored-headers: header1,header2 # default : null ; 但是在spring security中默认值不同
 
 logging:
   level:
     com.netflix: debug # 将 com.netflix 包的日志级别设置成 debug， 使zuul 打印转发细节。
+
+
 
 
 
