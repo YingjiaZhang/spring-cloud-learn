@@ -20,6 +20,10 @@
 - [分布式系统延迟和容错框架Hystrix](https://blog.csdn.net/fight4gold/article/details/51252217)
 
 - [Zuul routes端点](https://www.jianshu.com/p/6956d58804f7?utm_source=oschina-app)
+
+- [curl](https://curl.haxx.se/docs/)
+
+- [spring cloud 超时重试](https://www.cnblogs.com/zhangjianbin/p/7228628.html)
 # 遇到的坑
 
 - java.lang.IllegalArgumentException: URI is not absolute 
