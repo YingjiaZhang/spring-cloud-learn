@@ -13,6 +13,14 @@ management:
   security:
     enabled: false # 不设置 routes 端点无法访问
 
+# 默认情况下 Spring cloud 为 zuul 编写并启用了一些过滤器 eg: DebugFilter etc. 在org.springframework.cloud.netflix.zuul.filters下，
+# 根据需要我们可以使用 zuul.<SimpleClassName>.<filterType>.disable=true ，即可禁用SimpleClassName所对应的过滤器。以过滤器
+# 同理，我们也可以禁用自定义的 filter
+zuul:
+  PreRequestLogFilter:
+    pre:
+      disable: true
+
 
 
 
