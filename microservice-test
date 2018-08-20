@@ -1,0 +1,6 @@
+#!/bin/sh
+
+result=`sed '$d' .gitignore`
+rm -rf .gitignore
+echo "$result" > .gitignore 
+echo 'end'
