@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: microservice-gateway-zuul-fallback
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+server:
+  port: 8040
+
+#management:
+#  security:
+#    enabled: false # 不设置 routes 端点无法访问
+
+
+
+
