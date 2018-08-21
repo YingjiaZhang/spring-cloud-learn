@@ -9,3 +9,4 @@ spring:
         git:
           uri: https://github.com/YingjiaZhang/spring-cloud-config-repo
           username: zhyingjia@163.com
+          clone-on-start: true
