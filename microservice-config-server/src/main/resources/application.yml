@@ -9,4 +9,4 @@ spring:
         git:
           uri: https://github.com/YingjiaZhang/spring-cloud-config-repo
           username: zhyingjia@163.com
-          password: Zhyingjia@163
+          password: 
