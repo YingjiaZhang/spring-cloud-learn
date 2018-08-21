@@ -24,6 +24,8 @@
 - [curl](https://curl.haxx.se/docs/)
 
 - [spring cloud 超时重试](https://www.cnblogs.com/zhangjianbin/p/7228628.html)
+
+- [spring-boot的三种启动方式](https://blog.csdn.net/u011425751/article/details/79507386)
 # 遇到的坑
 
 - java.lang.IllegalArgumentException: URI is not absolute 
@@ -45,6 +47,10 @@
     原因：指定类没有getter setter方法
     
     解决：添加getter setter 方法 / Annotation Process ： enable lombok plugin 
+    
+# 了解
+- 负载均衡器: Nginx、HAProxy、 F5
+
 
 
 

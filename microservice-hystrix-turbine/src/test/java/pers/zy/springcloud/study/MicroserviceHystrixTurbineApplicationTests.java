@@ -1,4 +1,4 @@
-package pers.zy.springcloud.study.microservicehystrixturbine;
+package pers.zy.springcloud.study;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
