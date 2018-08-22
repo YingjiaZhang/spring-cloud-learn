@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/YingjiaZhang/spring-cloud-config-repo
-          username: zhyingjia@163.com
-          password: P@ss123456.
+          username: 
+          password:
           clone-on-start: true
 # 设置 loglevel 为 debug, 可以打印config server 请求 git repo 的细节，
 # 能够帮助我们更好地理解config server 的git仓库的配置，便于快速定位问题

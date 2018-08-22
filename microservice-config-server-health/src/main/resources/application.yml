@@ -1,0 +1,29 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: microservice-config-server-health
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YingjiaZhang/spring-cloud-config-repo
+          username:
+          password:
+          clone-on-start: true
+        health:
+          repositories:
+            a-foo:
+              lable: config-label-v2.0
+              name: microservice-foo
+              profiles: dev
+            b-foo:
+              lable: config-label-v2.0
+              name: microservice-foo
+              profiles: test
+logging:
+  level:
+    org.springframework.cloud: DEBUG
+    org.springframework.boot: DEBUG
+
+# spring.cloud.config.server.health.enable=false

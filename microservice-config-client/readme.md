@@ -29,3 +29,38 @@ spring.cloud.bootstrap.enable=false;
 curl http://localhost:8081/profile
 dev-10%
 ```
+
+```
+➜  ~ curl http://localhost:9999/microservice-foo-dev.properties
+profile: dev-1.0%
+```
+
+```
+➜  ~ curl http://localhost:9999/microservice-foo/dev/master | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:--   0     0    0     0    0     0      0      0 --:--:-- --:--:--   0     0    0     0    0     0      0      0 --:--:--  0:00:01 100   411    0   411    0     0    201      0 --:--:--  0:00:02 --:--:--   201
+{
+    "label": "master",
+    "name": "microservice-foo",
+    "profiles": [
+        "dev"
+    ],
+    "propertySources": [
+        {
+            "name": "https://github.com/YingjiaZhang/spring-cloud-config-repo/microservice-foo-dev.properties",
+            "source": {
+                "profile": "dev-1.0"
+            }
+        },
+        {
+            "name": "https://github.com/YingjiaZhang/spring-cloud-config-repo/microservice-foo.properties",
+            "source": {
+                "profile": "default-1.0"
+            }
+        }
+    ],
+    "state": null,
+    "version": "7a8a8d4b435b6a6459753994c0946d32ceec4c2e"
+}
+```

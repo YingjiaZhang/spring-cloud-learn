@@ -8,3 +8,5 @@ spring:
       uri: http://localhost:9999/ # 对应config server所获取的配置文件的{profile}
       profile: dev
       label: master # 对应config server所获取的配置文件的{label}
+
+# http://localhost:9999/microservice-foo/dev/master
