@@ -2,15 +2,17 @@ server:
   port: 9999
 spring:
   application:
-    name: microservice-config-server
+    name: microservice-config-server-encryption
   cloud:
     config:
       server:
         git:
           uri: https://github.com/YingjiaZhang/spring-cloud-config-repo
-          username:
+          username: 
           password:
           clone-on-start: true
+encrypt:
+  key: foo # 设置对称秘钥
 # 设置 loglevel 为 debug, 可以打印config server 请求 git repo 的细节，
 # 能够帮助我们更好地理解config server 的git仓库的配置，便于快速定位问题
 logging:
