@@ -28,3 +28,19 @@ curl $CONFIG_SERVER_URL/decrypt <need to ciphertext>
 pass123%        
 ```
 
+#### issue
+配置了spring.cloud.config.server.encrypt.enabled=true但是并不能直接返回yml文件中的解密结果，但是直接调用解密接口可以实现解密结果
+```
+➜  microservice-config-server-encryption git:(master) ✗ curl http://localhost:9999/encryption-default.yml
+spring:
+  datasource:
+    password: '{chiper}842d21cb3b28d1bc58678cbf19f44fb43011fc5b7432542164187c77c4c1d45e'
+    username: dbuser
+```
+```
+➜  microservice-config-server-encryption git:(master) ✗ curl http://localhost:9999/decrypt -d 842d21cb3b28d1bc58678cbf19f44fb43011fc5b7432542164187c77c4c1d45e
+pass123%     
+```
+
+
+
