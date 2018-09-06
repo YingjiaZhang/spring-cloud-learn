@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8088
 spring:
   application:
     name: microservice-foo # 对应config server所获取的配置文件的{application}

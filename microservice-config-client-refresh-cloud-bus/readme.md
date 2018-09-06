@@ -47,12 +47,18 @@ dev-1.0-bus%
 > 某些场景下,只想要刷新部分服务的配置，可以同个/bus/refresh端点的destination参数来定位要刷新的应用程序
 eg:
 ```
-curl http://{host}:{port}/bus/refresh?destination=customers:9000 
+http://{host}:{port}/bus/refresh?destination=customers:9000 
 这样消息总线上的微服务实例可以根据destionation参数值来判断是否需要刷新。customer:9000指的是各个微服务的AppliactionContextID
 ```
 默认情况下 `Application Context ID` 是`spring.application.name:server.port`
 - [解决Spring Cloud Bus不刷新所有节点的问题及理解"Application Context ID must be unique"](http://www.itmuch.com/spring-cloud-code-read/spring-cloud-code-read-spring-cloud-bus/)
 
+```
+curl -X POST http://localhost:8088/bus/refresh\?destination\=microservice-foo:8082 # 8088 和 8082 端口的 microservice-foo 配置都会刷新
+
+curl -X POST http://localhost:8088/bus/refresh\?destination\=microservice-foo:8088 # 仅刷新 8088 端口的 microservice-foo 配置
+
+```
 
 ## 架构改进
 ### Why？
