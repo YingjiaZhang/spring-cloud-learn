@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/YingjiaZhang/spring-cloud-config-repo
-          username: zhyingjia@163.com
-          password: zhyingjia@163.com
+          username:
+          password: 
           clone-on-start: true
     bus:
       trace:
