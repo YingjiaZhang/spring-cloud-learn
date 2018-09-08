@@ -1,0 +1,29 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YingjiaZhang/spring-cloud-config-repo
+          username: zhyingjia@163.com
+          password: zhyingjia@163.com
+          clone-on-start: true
+    bus:
+      trace:
+        enabled: true     # 开启cloud bus的跟踪
+logging:
+  level:
+    org.springframework.cloud: DEBUG
+    org.springframework.boot: DEBUG
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: pass123
