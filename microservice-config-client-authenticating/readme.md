@@ -13,3 +13,14 @@ spring:
 
 ```
 - 指定config server的用户名和密码
+```
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999/
+      username: user
+      password: pass123
+      profile: dev
+      label: master # 对应config server所获取的配置文件的{label}
+
+```
