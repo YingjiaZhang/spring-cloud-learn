@@ -4,10 +4,10 @@
 
 ## Git 仓库的高可用
 
-- 第三方Git仓库(已实现高可用): github, gitee, gitlab, etc.
+- 第三方Git仓库(已实现高可用): github, gitee, gitlab, etc.（参考指定Git仓库官网文档进行搭建）
 - 自建Git仓库管理系统:需要自建Git仓库的高可用.
 
-##消息队列的高可用
+##消息队列的高可用（参考指定消息队列官网文档进行搭建）
 
 ##Config Server自身高可用
 - 使用负载均衡器
